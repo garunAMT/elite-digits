@@ -9,6 +9,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Logo from "@/components/shared/Logo"
 
 const navItems = [
   { title: "Home", href: "/" },
@@ -21,20 +22,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <nav className="bg-[#0a2647] p-4 flex items-center justify-between">
+    <nav className="bg-[#0a2647] py-2 px-4 flex items-center justify-between">
       <div className="flex items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="h-6 w-6 mr-2 text-white"
-        >
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-        </svg>
+        <Logo />
         <span className="text-white text-xl font-bold">ELITE DIGITS</span>
       </div>
       <div className="hidden md:flex space-x-6">
