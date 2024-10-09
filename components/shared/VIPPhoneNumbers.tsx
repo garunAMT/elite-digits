@@ -170,7 +170,7 @@ export default function VIPPhoneNumbers({ phoneNumbers, categories }: VIPPhoneNu
                 placeholder="Start With"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full sm:w-40"
+                className="w-full"
               />
               <Button>SEARCH</Button>
             </div>

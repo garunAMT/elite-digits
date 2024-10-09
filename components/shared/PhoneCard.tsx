@@ -33,8 +33,8 @@ export default function PhoneCard({ phone }: PhoneCardProps) {
         <p className="text-xs text-gray-500 mt-1">{phone.category}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0 flex justify-between">
-        <Button variant="outline" className="w-full">Details</Button>
-        <Button className="w-full bg-blue-600 hover:bg-blue-700">Buy Now</Button>
+        <Button variant="outline">Details</Button>
+        <Button className="bg-blue-600 hover:bg-blue-700">Buy Now</Button>
       </CardFooter>
     </Card>
   )
